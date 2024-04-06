@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Demo local storage </title>
+    <link rel="stylesheet" href="style.css">
+    <title> Local Storage </title>
 </head>
+
 <body>
 
-    <div>
-        <label for="nome">Nome</label>
-        <input type="text" id="nome">
+    <div class="holder">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome">
+        </div>
+
+        <div>
+            <label for="idade">Idade:</label>
+            <input type="text" id="idade">
+        </div>
+
+        <div>
+            <label for="time">Time:</label>
+            <input type="text" id="time">
+        </div>
+
+        <div class="action">
+            <button id="gravar" class="bnt" type="button" onclick="gravaDados()">Gravar Dados</button>
+            <button id="apagar" class="bnt" type="button" onclick="apagarDados()">Apagar Dados</button>
+        </div>
     </div>
 
-    <div>
-        <label for="idade">Idade</label>
-        <input type="text" id="idade">
-    </div>
-
-    <div>
-        <label for="time">Time</label>
-        <input type="text" id="time">
-    </div>
-
-    <div>
-        <button type="button" onclick="gravaDados()">Gravar Dados</button>
-        <button type="button" onclick="apagarDados()">Apagar Dados</button>
-    </div>
-
-    <div id="tela"></div>
+    <div id="tela" class="tela-clear"></div>
 
     <script src="./script.js"></script>
 
 </body>
+
 </html>
